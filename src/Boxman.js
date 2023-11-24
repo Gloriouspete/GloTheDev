@@ -49,7 +49,7 @@ export const Boxman = () => {
             style={{ cursor: 'pointer' }}
           >
 
-            <FaHome style={{ fontSize: '15px'}} size={15} />
+            <p className=''>Home</p>
             {isHoveredHome && <p id="layee">Home</p>}
           </div>
         </Link>
@@ -58,7 +58,7 @@ export const Boxman = () => {
             onMouseEnter={handleMouseOnAbout}
             onMouseLeave={handleMouseOffAbout}
             style={{ cursor: 'pointer' }}>
-            <FaUser color='' />
+           <p className=''>About Me</p>
             {isHoveredAbout && <p id="layee">About</p>}
           </div>
         </Link>

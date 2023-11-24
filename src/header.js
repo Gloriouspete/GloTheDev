@@ -50,7 +50,7 @@ export const Header = () => {
 
   return (
     <>
-      <div className="w-screen bg-white flex fixed h-12 top-0 justify-between items-center font-bold ">
+      <div className="w-screen  flex fixed h-12 top-0 justify-between items-center font-bold ">
         <div className="ml-4">
           <p className='font-intermedium text-md '></p>
         </div>
@@ -58,7 +58,7 @@ export const Header = () => {
           onClick={edonckick}
         >
 
-          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+          <svg className='text-white fill-white' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
             <path d="M32 288c-17.7 0-32 14.3-32 32s14.3 32 32 32l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 288zm0-128c-17.7 0-32 14.3-32 32s14.3 32 32 32l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 160z" /></svg>
 
 
@@ -72,8 +72,8 @@ export const Header = () => {
               onMouseLeave={handleMouseOffHome}
               style={{ cursor: 'pointer' }}
             >
-              <FaHome size={25} />
-              {isHoveredHome && <p className='text-mycolor font-intermedium'>Home</p>}
+              <FaHome size={25} color='white' />
+              {isHoveredHome && <p className='text-white font-intermedium'>Home</p>}
             </div>
           </Link>
           <Link to="/About">
@@ -82,7 +82,7 @@ export const Header = () => {
               onMouseLeave={handleMouseOffAbout}
               style={{ cursor: 'pointer' }}>
               <FaUser size={25} />
-              {isHoveredAbout && <p className='text-mycolor font-intermedium'>About</p>}
+              {isHoveredAbout && <p className='text-white font-intermedium'>About</p>}
             </div>
           </Link>
           {/*
@@ -104,17 +104,17 @@ export const Homer = () => {
 
   return (
     <>
-      <div className="flex w-full items-center justify-center my-6">
+      <div className="flex w-full flex-col sm:flex-row items-center justify-center my-6">
 
         <div className="">
-          <a href='https://linkedin.com/in/gloriouspete'>
-            <FaLinkedin size={25} color='#0000cf' />
+          <a href='mailto:peterninyo4@gmail.com'>
+            <button className='sm:h-12 w-auto px-3 py-1 bg-blue-500 rounded-sm m-3 font-inter text-white font-semibold' > Email Me</button>
           </a>
 
         </div>
         <div className="">
-          <a href='https://github.com/github'>
-            <FaGithub />
+          <a href='https://mega.nz/fm/VG5jVQLZ'>
+            <button className='sm:h-12 w-auto px-3 py-1 bg-red-500 m-3 rounded-sm text-white font-semibold animate-bounce' > My Resume</button>
           </a>
 
         </div>
@@ -127,40 +127,40 @@ export const Homer = () => {
 export const Footr = () => {
   return (
     <>
-      <div className="w-full bg-black text-white flex flex-col items-center ">
-        <div className='flex flex-row flex-wrap justify-between w-full px-4 h-auto'>
+      <div className="w-full bg-slate-400 text-white flex flex-col items-center ">
+        <div className='flex flex-row flex-wrap justify-between w-full px-4 h-auto bg-slate-700'>
           <div className='w-5/12 sm:w-1/5 flex-col items-center flex h-auto py-3'>
-            <h4 className='font-semibold p-2 text-center'>SOCIALS</h4>
+            <h4 className='font-semibold p-2 text-center text-lg'>SOCIALS</h4>
             <br />
 
             <div className='flex w-auto h-auto items-center p-2'>
-            <a href='https://linken.com/in/gloriouspete'></a>  <FaLinkedin size={5} color='#0000cf'/>
+            <a href='https://linken.com/in/gloriouspete'><p className='font-semibold'>LinkedIn</p></a>  
              
             </div>
             <div className='flex w-auto h-auto items-center p-2'>
-            <a href='https://x.com/glocryptofuture'> <FaTwitter color='lightblue' /></a>
+            <a href='https://x.com/glocryptofuture'> <p className='font-semibold'>Twitter</p></a>
            
             </div>
             <div className='flex w-auto h-auto items-center p-2'>
-            <a href='https://github.com/gloriouspete'> <FaGithub /></a>
+            <a href='https://github.com/gloriouspete'> <p className='font-semibold'>Github</p></a>
              
             </div>
             <div className='flex w-auto h-auto p-2'>
-            <a href='https://linken.com/in/gloriouspete'><FaMedium /></a>
+            <a href='https://linken.com/in/gloriouspete'><p className='font-semibold'>Medium</p></a>
 
               
             </div>
           </div>
           <div class="w-5/12 sm:w-1/5 flex-col items-center h-auto flex py-3">
-            <h4 className='font-semibold p-2 text-center'>LINKS</h4>
+            <h4 className='font-semibold text-lg p-2 text-center'>LINKS</h4>
             <br />
 
             <div className='flex w-auto h-auto p-2'>
 
-              <Link to="/"><FaHome /></Link>
+              <Link to="/"><p className='font-semibold'>Home</p></Link>
             </div>
             <div className='flex w-auto h-auto p-2'>
-              <Link to="/About"><FaUser /></Link>
+              <Link to="/About"><p className='font-semibold'>About Me</p></Link>
             </div>
           
           </div>
@@ -173,22 +173,22 @@ export const Footr = () => {
             <p>REACT</p>
           </div>
           <div className='lmaor'>
-            <p>NODE JS</p>
+            <p>NODEJs</p>
           </div>
           <div className='lmaor'>
             <p>NEXT JS</p>
           </div>
           <div className='lmaor'>
-            <p>REACT NATIVE</p>
-          </div>
-          <div className='lmaor'>
             <p>JAVASCRIPT</p>
           </div>
           <div className='lmaor'>
-            <p>EXPRESS JS</p>
+            <p></p>
           </div>
           <div className='lmaor'>
             <p>TAILWIND CSS</p>
+          </div>
+          <div className='lmaor'>
+            <p>REACT NATIVE</p>
           </div>
           <div className='lmaor'>
             <p>MYSQL & MONGO DB</p>
