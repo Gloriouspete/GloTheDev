@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: white;
   font-family:verdana;
 
 }
@@ -301,10 +301,7 @@ margin: 0 10px;
   background-color: red;
 }
 
-svg {
-  width: 80px;
-  height: 50px;
-}
+
 
 img {
   width: 80px;
