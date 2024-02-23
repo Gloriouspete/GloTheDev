@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Boxman } from './Boxman';
 import { FaAddressCard, FaBriefcase, FaDownload, FaGithub, FaHome, FaLinkedin, FaMailchimp, FaTv, FaTwitter, FaUser, FaWhatsapp } from 'react-icons/fa'
+import { MdMenu } from 'react-icons/md'
 import { Github } from './misc';
 export const Header = () => {
 
@@ -52,16 +53,15 @@ export const Header = () => {
     <>
       <div className="w-screen  flex fixed h-12 top-0 justify-between items-center font-bold ">
         <div className="">
-          <p className='font-intermedium text-md '></p>
+          <p className='mx-5 font-intermedium animate-bounce'>GLORIOUS</p>
         </div>
         <div className=''
           onClick={edonckick}
         >
 
-        <p className='mx-5 font-intermedium animate-bounce'><span className='text-indigo-600 text-2xl'>G</span>lothedev</p>
-
+          <MdMenu size={25} className='fill-slate-800 mx-3' />
         </div>
-        {isClick && <Boxman />}
+        {isClick && <Boxman close={() => edonckick()} />}
         {
           /*
         <div className="rectangle">
@@ -108,7 +108,7 @@ export const Homer = () => {
         </div>
         <div className="sm:h-12 w-auto px-3 py-2 bg-black rounded-3xl m-3 font-intermedium text-white flex flex-row">
           <FaDownload className='mx-2' size={18} />
-          <a href='https://mega.nz/fm/VG5jVQLZ'>
+          <a href='/01 Glo Fullstack.pdf'>
             <p className='font-interbold text-base'>Download Resume</p>
           </a>
 

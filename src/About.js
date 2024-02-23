@@ -7,12 +7,12 @@ export const About = () => {
     <>
       <Header />
       <div class="about-me" className="mt-12 px-2 text-center">
-        <h1 className="text-2xl font-interbold text-slate-300 mb-4">Professionally,</h1>
-        <p className="text-md font-light font-inter mb-2 text-slate-300 sm:px-36">As a Full stack with expertise in multiple
+        <h1 className="text-2xl font-interbold text-slate-900 mb-4">Professionally,</h1>
+        <p className="text-md font-light font-intermedium mb-2 text-slate-900 sm:px-36">As a Full stack with expertise in multiple
           disciplines, I have spent the past three years honing my skills in ideation, writing reuseable codes,server and API integration and technical writing.
           My goal now is to apply this wealth of knowledge
           to industries that are yet to fully realize the benefits of faster,better and trustworthy design and development.
-          </p><p className="text-md font-light font-inter mb-2 text-slate-300 sm:px-36">
+          </p><p className="text-md font-light font-intermedium mb-2 text-slate-900 sm:px-36">
 
           I believe that my diverse background, coupled with my
           experience in the field, puts me in a unique position to
@@ -23,8 +23,8 @@ export const About = () => {
           My passion for Web Development has only grown stronger over time, and I am eager to continue exploring new challenges
           and opportunities in this field. I am confident that my skills and experience will allow me to make a meaningful
           impact on any project or team that I am a part of.</p>
-        <h1 className="text-2xl font-interbold text-slate-300 mb-4">Personally,</h1>
-        <p className="text-slate-300 sm:p-36 text-md font-light font-inter mb-2">
+        <h1 className="text-2xl font-interbold text-slate-900 mb-4">Personally,</h1>
+        <p className="text-slate-900 sm:p-36 text-md font-light font-inter mb-2">
           I come from a typical working-class family in Nigeria, and I am proud to be a fourth-generation Nigerian.
           Despite not being financially rich, my parents instilled in me and my siblings a strong value for education,
           ensuring that we received the best education possible with the resources they had.
@@ -33,6 +33,7 @@ export const About = () => {
           science fiction films, I had aspirations of becoming a hacker. At the time,
           it seemed like an impossible dream, but my passion for technology never
           dwindled.
+          <br />
           <br />
           
           That all changed when I discovered Google Grasshopper,
